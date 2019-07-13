@@ -1,0 +1,328 @@
+.navbar{
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 0rem;
+    box-shadow: 0 .05rem 1rem rgba(128, 128, 128, 0.602);
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    @include clearfix;
+
+    @include respond(tablet-portrait){
+        height: 0rem;
+
+    }
+
+    &_left{
+        
+        &:not(first-child){
+            margin: 0;
+            margin-left: 1rem;
+            float: left; 
+        }
+        &-name{
+            transform: translateY(-.5rem);
+            
+
+            &1, &2{
+                float: left;
+                @include respond(tablet-portrait){
+                    margin-top: 1rem;
+                }
+                
+            }
+            &1{
+                margin-right: 2rem
+            }
+        }
+        &-logo{
+            @include respond(tablet-portrait){
+                margin-top: .5rem !important;
+            }
+            
+            width: 6rem;
+            transition: .8s transform ease-in-out;
+
+            
+            &:hover{
+                transform: rotateY(90deg) rotateX(90deg) scale(.5) 
+            }
+            &:active{
+                transform: rotateY(0deg) rotateX(0deg) scale(1.3)
+            }
+        }
+    }
+
+    &_right{
+        //background-color: green;
+        visibility: hidden;
+        height: 0;
+        
+        @include respond(phone){
+            width:0rem;
+        }
+    }
+    &_right_link{
+        display: inline-block;
+        margin-top: .5rem;
+        text-decoration: none;
+        margin-right: 0rem;
+        padding-top: .5rem;
+        //background-color: red;
+        z-index: 600;
+
+        @include respond(tablet-portrait){
+            transform: translateX(50rem);
+            padding-left: 10rem ;
+            padding-right: 8rem ;
+            margin-top: 2rem;
+            display: block;
+            padding-bottom: 2rem;
+            margin-left: 0rem;
+            visibility: hidden;
+            
+        }
+    
+
+        &-1,&-2,&-3,&-4,&-5,&-hr{
+            margin-right: 4rem;
+            transition: all .15s ease-out;
+            right: 0rem;
+            visibility: visible;
+
+            @include respond(tablet-portrait){
+                margin-right: 3rem;
+                transition: all .7s ease-out;
+            }
+        }
+
+            &-1:hover,&-2:hover,&-3:hover,&-4:hover,&-5:hover{
+                transform: translateY(-.2rem) ;
+                
+                }
+                &:active{
+                    transform: translateY(.4rem) ;
+                    
+                } 
+    
+                @include respond(tablet-portrait){
+    
+                    &:hover{
+                        transform: translate(0rem,-.8rem) !important;
+                        
+                        transition-duration: .15s;
+                        
+                        }
+                        &:active{
+                            transform: translate(0rem,.6rem) !important;
+                            
+                            transition-duration: .15s;
+                            
+                        } 
+                }
+
+                @include respond(phone){
+    
+                    &:hover{
+                        transform: translate(-20rem,-.8rem) !important;
+                        
+                        transition-duration: .15s;
+                        
+                        }
+                        &:active{
+                            transform: translate(-20rem,.6rem) !important;
+                            
+                            transition-duration: .15s;
+                            
+                        } 
+                }
+
+            
+        &-1{
+            color: purple;
+            
+            @include respond(tablet-portrait){
+                transition-delay: .05s;
+                margin-top: 4rem;
+
+                &:hover{
+                    transition-delay: 0s !important;
+                }
+            }
+        }
+        &-2{
+            color: fuchsia;
+            
+            @include respond(tablet-portrait){
+                transition-delay: .10s;
+
+                &:hover{
+                    transition-delay: 0s !important;
+                }
+            }
+        }
+        &-3{
+            color: purple;
+            
+            @include respond(tablet-portrait){
+                transition-delay: .15s;
+
+                &:hover{
+                    transition-delay: 0s !important;
+                }
+            }
+        }
+        &-4{
+            color: fuchsia;
+            
+            @include respond(tablet-portrait){
+                transition-delay: .20s;
+
+                &:hover{
+                    transition-delay: 0s !important;
+                }
+            }
+        }
+        &-5{
+            color: purple;
+            
+            @include respond(tablet-portrait){
+                transition-delay: .25s;
+
+                &:hover{
+                    transition-delay: 0s !important;
+                }
+            }
+        }
+
+        &-hr{
+            display: inline-block;
+            width: 0%;
+            visibility: hidden;
+            transition: all .5s ease-in-out;
+
+            @include respond(tablet-portrait){
+            opacity: 0;
+            visibility: visible;
+            border-top-color: rgba(255, 0, 255, 0.1);
+            border-bottom-color: transparent;
+            transform: translateX(3.5rem);
+            }
+            @include respond(phone){
+                transform: translateX(5.5rem);
+            }
+        }
+
+        &-checkbox{
+            z-index: 10;
+            position: absolute;
+            display: inline-block;
+            width: 10rem;
+            height: 4rem;
+            opacity: 0;
+            top: 150%;
+            transform: translate(-50%,-50%);
+            left: 135%;
+            cursor: pointer;
+        }
+
+        &-iconbox{
+            transform: translateX(-10rem);
+            position: relative;
+            display: inline-block;
+            height: 3rem;
+            top: -1.5rem;
+            visibility: hidden;
+            width: 0;
+
+            @include respond(tablet-portrait){
+                visibility: visible;
+                width: 4rem;
+                transform: translateX(15rem);
+            }
+            @include respond(phone){
+                visibility: visible;
+                width: 4rem;
+                transform: translateX(-10rem);
+            }
+        }
+
+        &-iconbox:hover &-icon::after {
+            top: 1.3rem;
+        }
+        &-iconbox:hover &-icon::before {
+            top: -1.3rem;
+        }
+
+        &-checkbox:checked + &-icon {
+            background-color: transparent;
+        }
+        &-checkbox:checked + &-icon::after {
+            top: 0rem;
+            transform: rotate(135deg);
+        }
+        &-checkbox:checked + &-icon::before {
+            top: 0rem;
+            transform: rotate(-135deg);
+        }
+        
+        &-icon{
+            
+            position: relative;
+            display: inline-block;
+            width: 4rem;
+            height: 2px;
+            border-radius: 10rem;
+            background-color: fuchsia;
+            top: 3.5rem;
+            left:80%;
+            transition: all .15s ease-in-out;
+            
+
+            &::before{
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 4rem;
+                height: 2px;
+                border-radius: 10rem;
+                background-color: purple;
+                top: -1rem;
+                transition: all .15s ease-in-out;
+                
+            }
+
+            &::after{
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 4rem;
+                height: 2px;
+                border-radius: 10rem;
+                background-color: purple;
+                top: 1rem;
+                transition: all .15s ease-in-out;
+                
+            }
+        }
+        
+        
+    }
+}
+
+.side-nav{
+    visibility: visible;
+    opacity: .9;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    position: fixed;
+    z-index: -10;
+    right: 0;
+    top:0;
+    box-shadow: 0rem 1rem 1rem gray;
+    transition: .7s all ease-out;
+    overflow-x: hidden;
+}

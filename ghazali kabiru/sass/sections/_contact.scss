@@ -1,0 +1,54 @@
+.contact{
+    background-color: #fff;
+    width: 100%;
+    &_body{
+        background-image:linear-gradient(to right, rgba(128, 0, 128, 0.05), rgba(255, 0, 255, 0.05));
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        height: 40rem;
+        padding-top: 5rem;
+        padding-left: 10rem;
+        width: 100%;
+
+        &-email, &-phone, &-follow{
+            display: block;
+            margin-bottom: 3rem;
+        }
+
+        &-email{
+            &-label, &-text{
+                display: inline-block;
+            }
+        }
+        &-phone{
+            &-label, &-text, &-country{
+                display: inline-block;
+            }
+            &-country{
+               width: 5rem;
+               height: 2.5rem;
+               background-image: linear-gradient(to right, green 0%, green 33.3%, white 33.3%, white 66.6%,green 66.6%, green 100%);
+            }
+        }
+        &-follow{
+            &-label{
+                display: inline-block;  
+            }
+            &-facebook, &-twitter, &-linkdn, &-instagram{
+                display: inline-block;
+                width: 4rem;
+                height: 4rem;
+                margin: 2rem;
+                
+            }
+        }
+
+        &-hr{
+            width: 90%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: transparent;
+            border-top:1px solid rgba(128, 0, 128, .5);
+        }
+    }
+}

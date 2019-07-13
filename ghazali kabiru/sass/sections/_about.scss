@@ -1,0 +1,239 @@
+.about{
+    width: 100%;
+    &_body{
+        background-image:linear-gradient(to right, rgba(128, 0, 128, 0.05), rgba(255, 0, 255, 0.05));
+        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+        height: 145rem;
+        width: 100%;
+
+        @include respond(tablet-portrait){
+            height: 250rem;
+            clip-path: polygon(0 1%, 100% 0, 100% 99%, 0 100%);
+        }
+        @include respond(phone){
+            height: 620rem;
+            clip-path: polygon(0 .5%, 100% 0, 100% 99.5%, 0 100%);
+        }
+
+        &_subheading{
+            display: block;
+            
+
+            &_achievements{
+                text-align: center;
+
+                &-hr{
+                    width: 80%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: transparent;
+                    border-top:1px solid fuchsia;
+                }
+            }
+        }
+    }
+
+    &_header{
+        text-align: center;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    &_info{
+        
+        &-text{
+           padding-top: 8rem;
+           column-count: 2;
+           column-gap: 6rem;
+           column-rule: 1px solid rgba(128, 0, 128, 0.2);
+           text-align: justify;
+
+           @include respond(phone){
+            column-count: unset;
+            column-gap: unset;
+            column-rule: unset;
+            
+           }
+           
+        }
+    }
+
+    &_row{
+        height: 100rem;
+        padding: 1rem;
+        position: relative;
+        //background-color: green;
+
+        &-fix{
+            height: 40rem;
+            width: 30rem;
+            perspective: 150rem;
+            -moz-perspective: 1555rem;
+            //background-color: red;
+
+            @include respond(tablet-portrait){
+                height: 50rem;
+                width: 37.5rem;background-size: 100%;
+            }
+
+            @include respond(phone){
+                height: 80rem;
+                width: 60rem;background-size: 100%;
+            }
+        }
+
+        &-pic{
+            box-shadow: 0rem .5rem 2rem gray;
+            border-radius: 3px;
+            height: 100%;
+            width: 100%;
+            margin: 5rem 1rem;
+            transition: all 1s ease-in-out;
+            transform-origin: center;
+            -webkit-transform-origin: center;
+            perspective: 1555rem;
+            -moz-perspective: 1555rem;
+
+            @include respond(phone){
+                height: 80rem;
+                width: 60rem;
+               
+            }
+
+            &-btn1,&-btn2,&-btn3,&-btn4,&-btn5,&-btn6{
+                cursor: pointer;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                left: 50%;
+                bottom: 3rem;
+                padding: 1rem 4rem;
+                transition: all .15s;
+                
+            }
+
+            &-btn1{
+                border-color: fuchsia;
+            }
+            &-btn2{
+                border-color: purple;
+            }
+            &-btn3{
+                border-color: fuchsia;
+            }
+            &-btn4{
+                border-color: purple;
+            }
+            &-btn5{
+                border-color: fuchsia;
+            }
+            &-btn6{
+                border-color: purple;
+            }
+
+            &-h3{
+                position: absolute;
+                bottom: 8rem;
+                left:50%;
+                transform: translate(-50%,-50%);
+                width: 75%
+            }
+
+            &-1,&-2,&-3,&-4,&-5,&-6{
+               background-size: 30rem;
+               backface-visibility: hidden;
+               background-size: 100%;
+            }
+
+            &-1{
+                background-image:linear-gradient(to top, rgba(128, 0, 128, 0.8) 40%, rgba(128, 0, 128, 0.6) 50%, transparent 100%),url('images/c1.jpg');
+                
+            }
+            &-2{
+                
+                background-image:linear-gradient(to top, rgba(255, 0, 255, 0.8) 40%, rgba(255, 0, 255, 0.6) 50%, transparent 100%),url('images/c2.jpg');
+                
+            }
+            &-3{
+                background-image:linear-gradient(to top, rgba(128, 0, 128, 0.8) 40%, rgba(128, 0, 128, 0.6) 50%, transparent 100%),url('images/c3.jpg');
+                
+            }
+            &-4{
+                background-image:linear-gradient(to top, rgba(255, 0, 255, 0.8) 40%, rgba(255, 0, 255, 0.6) 50%, transparent 100%),url('images/c4.jpg');
+                
+            }
+            &-5{
+                background-image:linear-gradient(to top, rgba(128, 0, 128, 0.8) 40%, rgba(128, 0, 128, 0.6) 50%, transparent 100%),url('images/c5.jpg');
+                
+            }
+            &-6{
+                background-image:linear-gradient(to top, rgba(255, 0, 255, 0.8) 40%, rgba(255, 0, 255, 0.6) 50%, transparent 100%),url('images/c3.jpg');
+                
+            }
+
+            &-ex{
+                position: absolute;
+                top:-3rem;
+                right: .5rem;
+                cursor: pointer;
+
+                &-1{
+                    color: fuchsia;
+                }
+                &-2{
+                    color: purple;
+                }
+                &-3{
+                    color: fuchsia;
+                }
+                &-4{
+                    color: purple;
+                }
+                &-5{
+                    color: fuchsia;
+                }
+                &-6{
+                    color: purple;
+                }
+            }
+            
+            &-11,&-22,&-33,&-44,&-55,&-66{
+                position: absolute;
+                left: 0;
+                top: 0;
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+                padding: 4rem 3rem;
+                
+             }
+
+            &-11{
+                background-image:linear-gradient(to top right, purple, rgba(128, 0, 128, 0.2));
+              
+            }
+            &-22{
+                
+                background-image:linear-gradient(to top right, fuchsia, rgba(255, 0, 255, 0.2));
+              
+            }
+            &-33{
+                background-image:linear-gradient(to top right, purple, rgba(128, 0, 128, 0.2));
+              
+            }
+            &-44{
+                background-image:linear-gradient(to top right, fuchsia, rgba(255, 0, 255, 0.2));
+              
+            }
+            &-55{
+                background-image:linear-gradient(to top right, purple, rgba(128, 0, 128, 0.2));
+              
+            }
+            &-66{
+                background-image:linear-gradient(to top right, fuchsia, rgba(255, 0, 255, 0.2));
+              
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.h2{
+    display: inline;
+    background-image: linear-gradient(to right, purple, fuchsia );
+    -webkit-background-clip: text;
+    background-clip: text; 
+    margin: 0;
+    color: transparent;
+    padding: 0 2rem;
+}

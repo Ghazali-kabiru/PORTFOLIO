@@ -1,0 +1,19 @@
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/animation";
+@import "base/typography";
+
+@import "components/button";
+@import "components/h2";
+@import "components/grids";
+@import "components/font";
+
+@import "sections/navbar";
+@import "sections/welcome";
+@import "sections/about";
+@import "sections/skills";
+@import "sections/projects";
+@import "sections/contact";
+
+@import "pages/index";

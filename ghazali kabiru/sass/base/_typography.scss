@@ -1,0 +1,350 @@
+html{
+    font-family: pompiere;
+    font-weight: bold;
+    color: black;
+    //overflow: hidden;
+    
+
+}
+
+.navbar{
+    &_right_link{
+        color: black;
+        font-size: 2rem;
+
+        &-1,&-2,&-3,&-4,&-5{
+            @include respond(tablet-portrait){
+                font-size: 4rem;
+            }
+            @include respond(phone){
+                font-size:3rem;
+            }
+        }
+    }
+    &_left-name{
+
+        &1,&2{
+            font-family:iron-rust;
+            font-weight: 60;
+            font-size: 5rem;
+
+            @include respond(phone){
+                font-size:5rem;
+            }
+        }
+        &1{
+            color: purple;
+        }
+        &2{
+            color: fuchsia;
+        }
+       
+    }
+}
+
+.header{
+    &_contentbox{
+        &-text{
+            font-size: 7rem;
+            font-weight: lighter;
+            text-align: center;
+
+            @include respond(tablet-portrait){
+                font-size: 8rem;
+            }
+            @include respond(phone){
+                font-size:11rem;
+            }
+        }
+        &-btn{
+            font-size: 2.5rem;
+            text-transform: capitalize;
+           
+        }
+    }
+}
+.btn-white{
+    @include respond(tablet-portrait){
+        font-size: 4rem;
+    }
+
+}
+
+.h2{
+    font-family:iron-rust;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    font-weight: 60;
+
+    @include respond(tablet-portrait){
+        font-size: 7rem;
+    }
+   
+}
+
+.about{
+
+    &_info{
+        margin: 0 4rem;
+        &-text{
+            color: purple;
+            font-size: 3rem;
+            font-weight: lighter;
+
+            @include respond(tablet-portrait){
+                font-size: 4rem;
+            }
+
+            @include respond(phone){
+                font-size: 4rem;
+            }
+            
+        }
+    }
+
+    &_body{
+
+        &_subheading{
+
+            &_achievements{
+                    font-size: 4rem;
+                    text-transform: uppercase;
+                    color: purple;
+                
+            }
+        }
+    }
+
+    
+    &_row{
+    
+        &-pic{
+
+            &-h33{
+               color: white;
+               font-weight: lighter;
+               font-size: 2.5rem;
+               text-align: justify;
+
+               @include respond(tablet-portrait){
+                font-size: 3.5rem;
+                }
+                @include respond(phone){
+                    font-size: 5rem;
+                }
+                
+             }
+
+            &-h3{
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: lighter;
+                color: white;
+                text-align: justify;
+
+                @include respond(tablet-portrait){
+                    font-size: 3.2rem;
+                }
+                @include respond(phone){
+                    font-size: 4rem;
+                }
+              
+            }
+
+            &-ex{
+                font-size: 7rem;
+                font-weight: lighter;
+                
+                @include respond(tablet-portrait){
+                    font-size: 10rem;
+                }
+                @include respond(phone){
+                    font-size: 10rem;
+                }
+            }
+            
+            &-btn1,&-btn2,&-btn3,&-btn4,&-btn5,&-btn6{
+                text-decoration: none;
+                color: white;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: lighter;
+                text-align: justify;
+                
+                @include respond(tablet-portrait){
+                    font-size: 3rem;
+                }
+                @include respond(phone){
+                    font-size: 3rem;
+                }
+                
+            }
+
+        }
+    }
+}
+
+.skills{
+    &_body{  
+        &_subbody{
+            &_subrow{
+                text-align: center;
+                font-size: 2rem;
+                font-weight: lighter;
+                color: purple;
+                
+                @include respond(tablet-portrait){
+                    font-size: 3rem;
+                }
+            }        
+                &_row{  
+
+                        &_col3{
+                            font-weight: bold;
+                            color: purple;
+                            font-size: 1.7rem;
+                            
+                            @include respond(tablet-portrait){
+                                font-size: 2.5rem;
+                                text-align: left;
+                            }
+                        }
+
+                        &_col2{
+     
+                             &_bg{
+                                 &-content{
+                                     text-align: center;
+                                     font-size: 1.5rem;
+                                     font-weight: bold;
+                                     text-transform: uppercase;
+                                     color: purple;
+                                     @include respond(tablet-portrait){
+                                        font-size: 2.5rem;
+                                        
+                                    }
+                                 }
+                            }
+                        }
+
+                    &_col1{
+                       text-align: right;
+                       font-size: 2rem;
+                       font-weight: bold;
+                       color: purple;
+                       
+                            @include respond(tablet-portrait){
+                                font-size: 2.5rem;
+                            }
+                        
+                    }
+                }
+            }
+        }
+
+    }
+
+
+.projects{
+
+    &_header{
+      text-align: center;
+    }
+    &_body{
+        &_row{   
+            &_subrow{
+                &-right{
+                    text-align: center;
+                    &-subheader{
+                        font-size: 4rem;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: purple;
+
+                        @include respond(tablet-portrait){
+                            font-size: 3rem;
+                        }
+                    }
+                   
+                    &-text{
+                        font-size: 3rem;
+                        font-weight: lighter;
+                        color: purple;
+                        text-align: justify;
+
+                        @include respond(tablet-portrait){
+                            font-size: 3.5rem;
+                        }
+                    }
+                    &-btn{
+                        text-transform: uppercase;
+                        font-size: 2rem;
+                        text-decoration: none;
+                        color: purple;
+                    }
+                }
+            }
+    
+        }
+    }
+   
+}
+
+.contact{
+    &_header{
+        text-align: center;
+    }
+    &_body{
+        &-email, &-phone, &-follow{
+            font-size: 3rem;
+            font-weight: lighter;
+
+            @include respond(tablet-portrait){
+                font-size: 3.8rem;
+            }
+
+        }
+
+        &-email{
+            &-label{
+                color: fuchsia;
+            }
+            &-text{
+                font-weight: lighter;
+                text-transform: lowercase;
+                color: purple;
+            }
+        }
+
+        &-phone{
+            &-label{
+                color: fuchsia;
+            }
+            &-text{
+                font-weight: lighter;
+                text-transform: lowercase;
+                color: purple;
+            }
+        }
+
+        &-follow{
+            &-label{
+                color: fuchsia;
+            }
+        }
+
+        &-copyright{
+            font-size: 2rem;
+            color: fuchsia;
+            &-text{
+                font-size: 2.5rem;
+                color: purple;
+                font-weight: lighter;  
+                @include respond(tablet-portrait){
+                    font-size: 3rem;
+                }
+            }
+        }
+
+    }
+}

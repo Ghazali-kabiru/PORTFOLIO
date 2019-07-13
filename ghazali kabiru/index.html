@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <!--<link href="https://fonts.googleapis.com/css?family=Pompiere&display=swap" rel="stylesheet">-->
+        <link rel="stylesheet" href="index.css">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+        <title>Ghazali Kabiru</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar_left col col-1-of-2">
+                <img src="images/logo.svg" alt="logo" class="navbar_left navbar_left navbar_left navbar_left-logo">
+                <span class="navbar_left navbar_left navbar_left navbar_left-name ">
+                        <h2 class="navbar_left-name1 ">GHAZALI</h2>
+                        <h2 class="navbar_left-name2 ">KABIRU</h2>
+                
+                </span>
+            </div>
+            <div class="navbar_right col col-2-of-2">
+                <span class="navbar_right_link-iconbox">
+                        <input id="checkbox" onclick=nav() type="checkbox" class="navbar_right_link-checkbox">
+                        <span class="navbar_right_link-icon"></span>
+                </span>
+                <a href="#" id="navbar_right_link1" onclick="navlink()" class="navbar_right_link navbar_right_link-1">Home</a> <hr id="hr1" class="navbar_right_link-hr">
+                <a href="#about-section" id="navbar_right_link2" onclick="navlink()" class="navbar_right_link navbar_right_link-2">About</a> <hr id="hr2" class="navbar_right_link-hr">
+                <a href="#skills-section" id="navbar_right_link3" onclick="navlink()" class="navbar_right_link navbar_right_link-3">Skills</a> <hr id="hr3" class="navbar_right_link-hr">
+                <a href="#projects-section" id="navbar_right_link4" onclick="navlink()" class="navbar_right_link navbar_right_link-4">Projects</a> <hr id="hr4" class="navbar_right_link-hr">
+                <a href="#contact-section" id="navbar_right_link5" onclick="navlink()" class="navbar_right_link navbar_right_link-5">Contact</a> <hr id="hr5" class="navbar_right_link-hr">
+               
+                <div id="side-nav" class="side-nav"></div>
+            </div>
+            
+        </nav>
+
+        
+
+        <header class="header">
+            <br><br><br><br>
+            <img src="images/ghazali.png" alt="my picture" class="header-img">
+            <div class="header_contentbox">
+                <h1 class="header_contentbox-text">Hi there, I'm Ghazali and welcome to my portfolio</h1>
+                <a href="Ghazali-Kabiru.pdf" class="header_contentbox-btn btn btn-white" download="GHAZALI-KABIRU">Download CV</a>
+            </div>
+        </header>
+        <div id="about-section" class="slash">
+            <img src="images/slash.svg" alt="slash" class="slash-img">
+        </div>
+
+
+
+
+        <section  class="about">
+            <div  class="about_header">
+                    <h2 class="header-about h2">ABOUT</h2>
+            </div>
+            <div class="about_body">
+                <div class="about_info">
+                    <p class="about_info-text">My name is Ghazali Kabiru. I am a Nigerian living in Kaduna State Nigeria. I am a young front end web developer that speaks English as my second language. I have recieved certificates from organisations like UNESCO, NIIT, Alliance Francaise, etc. I have experience in front end web technologies like HTML, CSS, JAVASCRIPT, css pre-processor like SASS/SCSS, css framework like BOOTSTRAP, javascript framework like VUE-JS etc. Also some backend web technologies like NODE-JS and POSTGRESQL. I like learning new skills. I play games like Volleyball, table tennis, chess, checkers etc.</p>
+                </div>
+                <br><br><br><br>
+                <div class="subheading">
+                    <h3 class="about_body_subheading_achievements">achievements</h3>
+                    <hr class="about_body_subheading_achievements-hr">
+                </div>
+                <div class="about_row">
+
+                    <div class="about_row-fix about_row-fix-1">
+                            <div id="front1" class="about_row-pic about_row-pic-1 col col-1-of-6">
+                                <h3 class="about_row-pic-h3">Certificate of United Nations Educational Scientific and Cultural organisation (UNESCO)</h3>
+                                <span onclick="turn1()" id="btn-trans1"  class="about_row-pic-btn1 btn-trans">Details</span>
+                            </div>
+                            <div id="back1" class="about_row-pic about_row-pic-11 col col-1-of-6">
+                                <h3 class="about_row-pic-h33">On November 2014, I received a certificate by UNESCO during the UNESCO-NIGERIA project in support of the revitalisation of technical and vocational education (TVE) and was awarded "Certificate in computer applications" at upper credit.</h3>
+                                <h4 id="ex1" onclick="unturn1()" class="about_row-pic-ex about_row-pic-ex-1">&times</h4>
+                            </div>
+
+                    </div>
+                    <div class="about_row-fix about_row-fix-2">
+                            <div id="front2" class="about_row-pic about_row-pic-2 col col-2-of-6">
+                                <h3 class="about_row-pic-h3">Certificate of the National Institute of Technology(NIIT)</h3>
+                                <span onclick="turn2()" id="btn-trans2"  class="about_row-pic-btn2 btn-trans">Details</span>
+                            </div>
+                            <div id="back2" class="about_row-pic about_row-pic-22 col col-2-of-6">
+                                <h3 class="about_row-pic-h33">I was certified by the National Institute of Technology(NIIT) after completing the program titled "certificate in office 2010" for 54 hours on August 2015</h3>
+                                <h4 id="ex2" onclick="unturn2()" class="about_row-pic-ex about_row-pic-ex-2">&times</h4>
+                            </div>
+
+                    </div>
+                    <div class="about_row-fix about_row-fix-3">
+                            <div id="front3" class="about_row-pic about_row-pic-3 col col-3-of-6">
+                                <h3 class="about_row-pic-h3">Certificate of the National Institute of Technology(NIIT)</h3>
+                                <span onclick="turn3()" id="btn-trans3"  class="about_row-pic-btn3 btn-trans">Details</span>
+                            </div>
+                            <div id="back3" class="about_row-pic about_row-pic-33 col col-3-of-6">
+                                <h3 class="about_row-pic-h33">I was certified by the National Institute of Technology(NIIT) after completing the program titled "certificate in PC support and maintenance" for 48 hours also on August 2015</h3>
+                                <h4 id="ex3" onclick="unturn3()" class="about_row-pic-ex about_row-pic-ex-3">&times</h4>
+                            </div>
+
+                    </div>
+                    <div class="about_row-fix about_row-fix-4">
+                            <div id="front4" class="about_row-pic about_row-pic-4 col col-4-of-6">
+                                <h3 class="about_row-pic-h3">Certificate from Alliance Française</h3>
+                                <span onclick="turn4()" id="btn-trans4"  class="about_row-pic-btn4 btn-trans">Details</span>
+                            </div>
+                            <div id="back4" class="about_row-pic about_row-pic-44 col col-4-of-6">
+                                <h3 class="about_row-pic-h33">Also On August 2015 I was certified by a French Language School "Alliance Française" for attending a french course that was in accordance to the describers of the Common European Framework Reference for languages</h3>
+                                <h4 id="ex4" onclick="unturn4()" class="about_row-pic-ex about_row-pic-ex-4">&times</h4>
+                            </div>
+
+                    </div>
+                    <div class="about_row-fix about_row-fix-5">
+                            <div id="front5" class="about_row-pic about_row-pic-5 col col-5-of-6">
+                                <h3 class="about_row-pic-h3">Certificate of Citizenship and Leadership Training Center</h3>
+                                <span onclick="turn5()" id="btn-trans5"  class="about_row-pic-btn5 btn-trans">Details</span>
+                            </div>
+                            <div id="back5" class="about_row-pic about_row-pic-55 col col-5-of-6">
+                                <h3 class="about_row-pic-h33">I was certified by the Citizenship and Leadership Training Centre (Federal ministry of youth and sports, Abuja Nigeria) for attending a leadership training at mountain school shere hills Jos on may 2017</h3>
+                                <h4 id="ex5" onclick="unturn5()" class="about_row-pic-ex about_row-pic-ex-5">&times</h4>
+                            </div>
+
+                    </div>
+                    <div class="about_row-fix about_row-fix-6">
+                            <div id="front6" class="about_row-pic about_row-pic-6 col col-6-of-6">
+                                <h3 class="about_row-pic-h3">More Certificates Coming... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                                <span onclick="turn6()" id="btn-trans6"  class="about_row-pic-btn6 btn-trans">Details</span>
+                            </div>
+                            <div  id="back6" class="about_row-pic about_row-pic-66 col col-6-of-6">
+                                <h3 class="about_row-pic-h33">I am going to continue learning more skills soon because I like learning new things also because learning should be part of life.</h3>
+                                <h4 id="ex6" onclick="unturn6()" class="about_row-pic-ex about_row-pic-ex-6">&times</h4>
+                            </div>
+                            <div id="skills-section"></div>
+
+                    </div>
+
+                </div>   
+            </div>
+            
+        </section>
+
+        
+
+        <section class="skills">
+            <div class="skills_header">
+                <h2 class="header-skills h2">SKILLS</h2>
+            </div>
+            <div class="skills_body">
+                <div class="skills_body_subbody">
+                        <h4 class="skills_body_subbody_subrow">FRONT-END SKILLS <hr class="skills_body_subbody_subrow-hr"> </h4>
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">HTML: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-1"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">90%</span>
+                        </div>
+                        
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">CSS: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-2"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">90%</span>
+                        </div>
+
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">SASS/SCSS: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-12"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">85%</span>
+                        </div>
+                        
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">BOOTSTRAP:</span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-3"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">80%</span>
+                        </div>
+                        
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">JAVASCRIPT: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-4"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">80%</span>
+                        </div>
+                        
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">GIT/GITHUB: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-5"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">80%</span>
+                        </div>
+                        
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">VUE JS: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-6"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">75%</span>
+                        </div>
+                        
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">INKSCAPE: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-7"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">80%</span>
+                        </div>
+         
+                        
+                        <h4 class="skills_body_subbody_subrow">BACK-END SKILLS <hr class="skills_body_subbody_subrow-hr"> </h4>
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">NODE/EXPRESS: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-8"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">70%</span>
+                        </div>
+                        
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">POSTGRESQL: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-9"></span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3">80%</span>
+                        </div>
+         
+                        
+                        <h4 class="skills_body_subbody_subrow">UPCOMING SKILLS <hr class="skills_body_subbody_subrow-hr"> </h4>
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">PHOTOSHOP: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-10">Learning...</span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3"></span>
+                        </div>
+                        
+                        <div class="skills_body_subbody_row">
+                            <span class="skills_body_subbody_row_col1">WORDPRESS: </span>
+                            <span class="skills_body_subbody_row_col2">
+                                <span class="skills_body_subbody_row_col2_bg">
+                                    <span class="skills_body_subbody_row_col2_bg-content skills_body_subbody_row_col2_bg-content-11">Learning...</span>
+                                </span>
+                            </span>
+                            <span class="skills_body_subbody_row_col3"></span>
+                        </div>
+                        <div id="projects-section"></div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="projects">
+            <div class="projects_header">
+                <h2 class="header-projects h2">PROJECTS</h2>
+            </div>
+                <div class="projects_body">
+                    <div class="projects_body_row">
+                        <div class="projects_body_row_subrow">
+                            <div class="projects-block">
+                                <span class="projects_body_row_subrow-left">
+                                    <img src="images/project1.png" alt="portfolio" class="projects_body_row_subrow-left-img">
+                                </span>
+                                <span class="projects_body_row_subrow-right">
+                                        <h2 class="projects_body_row_subrow-right-subheader">my portfolio</h2>
+                                        <hr class="projects_body_row_subrow-right-subheader-hr">
+                                        <h4 class="projects_body_row_subrow-right-text">
+                                            This is my portfolio, the you are currently in. Click the button below to view source code
+                                    </h4>
+                                    <a href="https://github.com/Ghazali-kabiru/MY-PORTFOLIO" class="projects_body_row_subrow-right-btn btn">View Source Code</a>
+                                </span>
+                            </div>
+
+                            <div class="projects-block">
+                                <span class="projects_body_row_subrow-left">
+                                    <img src="images/project2.png" alt="exito" class="projects_body_row_subrow-left-img">
+                                </span>
+                                <span class="projects_body_row_subrow-right">
+                                        <h2 class="projects_body_row_subrow-right-subheader">exito  </h2>
+                                        <hr class="projects_body_row_subrow-right-subheader-hr">
+                                        <h4 class="projects_body_row_subrow-right-text">
+                                             This is my next project titled "exito" which is yet to be completed    
+                                    </h4>
+                                    <!--<a href="" class="projects_body_row_subrow-right-btn btn">View Source Code</a>-->
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <section id="contact-section" class="contact">
+            <div class="contact_header">
+                <h2 class="header-contact h2">CONTACT</h2>
+            </div>
+            <div class="contact_body">
+                <div class="contact_body-email">
+                    <label for="email" class="contact_body-email-label">Email:</label>
+                    <h4 id="email"class="contact_body-email-text">GKMAFARA@GMAIL.COM</h4>
+                </div>
+                <div class="contact_body-phone">
+                    <label for="phone" class="contact_body-phone-label">Phone:</label>
+                    <span class="contact_body-phone-country"> </span>
+                    <h4 id="phone"class="contact_body-phone-text">+(234)80-3600-1416</h4>
+                </div>
+                <div class="contact_body-follow">
+                    <label for="email" class="contact_body-follow-label">Follow Me On:</label>
+                    <a href="https://web.facebook.com/profile.php?id=100007025775127" id="follow"class="contact_body-follow-facebook">
+                        <img src="images/facebook.svg" alt="facebook" class="contact_body-follow-facebook-img">
+                    </a>
+                    <a href="https://twitter.com/ghazali_kabiru" id="follow"class="contact_body-follow-twitter">
+                        <img src="images/twitter.svg" alt="twitter" class="contact_body-follow-twitter-img">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ghazali-kabiru-4784b0175/" id="follow"class="contact_body-follow-linkdn">
+                        <img src="images/linkedin.svg" alt="linkedin" class="contact_body-follow-linkdn-img">
+                    </a>
+                    <a href="https://www.instagram.com/ghazali_kabiru/" id="follow"class="contact_body-follow-instagram">
+                        <img src="images/instagram.svg" alt="instagram" class="contact_body-follow-instagram-img">
+                    </a>
+                </div>
+                <hr class="contact_body-hr">
+                <br>
+                <h4 class="contact_body-copyright">COPYRIGHT 2019</h4>
+                <h5 class="contact_body-copyright-text">This entire website was built by only me.</h5>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <script>
+                var mediatab = window.matchMedia("(max-width: 51em)");
+                var mediaphone = window.matchMedia("(max-width: 45em)");
+                function navlink(){
+                    
+                    var link1 = document.getElementById('navbar_right_link1');
+                    var link2 = document.getElementById('navbar_right_link2');
+                    var link3 = document.getElementById('navbar_right_link3');
+                    var link4 = document.getElementById('navbar_right_link4');
+                    var link5 = document.getElementById('navbar_right_link5');
+
+                    var hr1 = document.getElementById('hr1');
+                    var hr2 = document.getElementById('hr2');
+                    var hr3 = document.getElementById('hr3');
+                    var hr4 = document.getElementById('hr4');
+                    var hr5 = document.getElementById('hr5');
+
+                    if(mediatab.matches){
+
+                    var box = document.getElementById('checkbox');
+                    box.checked = false;
+                    document.getElementById('side-nav').style.width='0';
+
+                    link1.style.visibility='hidden';
+                    link2.style.visibility='hidden';
+                    link3.style.visibility='hidden';
+                    link4.style.visibility='hidden';
+                    link5.style.visibility='hidden';
+
+                    hr1.style.visibility='hidden';
+                    hr2.style.visibility='hidden';
+                    hr3.style.visibility='hidden';
+                    hr4.style.visibility='hidden';
+                    hr5.style.visibility='hidden';
+
+                    hr1.style.opacity='0';
+                    hr2.style.opacity='0';
+                    hr3.style.opacity='0';
+                    hr4.style.opacity='0';
+                    hr5.style.opacity='0';
+
+                    hr1.style.width='0';
+                    hr2.style.width='0';
+                    hr3.style.width='0';
+                    hr4.style.width='0';
+                    hr5.style.width='0';
+
+                    hr1.style.transform='translateX(15rem)';
+                    hr2.style.transform='translateX(15rem)';
+                    hr3.style.transform='translateX(15rem)';
+                    hr4.style.transform='translateX(15rem)';
+                    hr5.style.transform='translateX(15rem)';
+
+                    link1.style.opacity='0';
+                    link2.style.opacity='0';
+                    link3.style.opacity='0';
+                    link4.style.opacity='0';
+                    link5.style.opacity='0';
+
+                    link1.style.transform='translateX(15rem)';
+                    link2.style.transform='translateX(15rem)';
+                    link3.style.transform='translateX(15rem)';
+                    link4.style.transform='translateX(15rem)';
+                    link5.style.transform='translateX(15rem)';
+                }}
+
+                function nav(){
+                var box = document.getElementById('checkbox');
+                var link1 = document.getElementById('navbar_right_link1');
+                var link2 = document.getElementById('navbar_right_link2');
+                var link3 = document.getElementById('navbar_right_link3');
+                var link4 = document.getElementById('navbar_right_link4');
+                var link5 = document.getElementById('navbar_right_link5');
+
+                var hr1 = document.getElementById('hr1');
+                var hr2 = document.getElementById('hr2');
+                var hr3 = document.getElementById('hr3');
+                var hr4 = document.getElementById('hr4');
+                var hr5 = document.getElementById('hr5');
+                
+                if(box.checked == true && mediatab.matches){
+                    document.getElementById('side-nav').style.width='30%';
+                    link1.style.visibility='visible';
+                    link2.style.visibility='visible';
+                    link3.style.visibility='visible';
+                    link4.style.visibility='visible';
+                    link5.style.visibility='visible';
+
+                    hr1.style.visibility='visible';
+                    hr2.style.visibility='visible';
+                    hr3.style.visibility='visible';
+                    hr4.style.visibility='visible';
+                    hr5.style.visibility='visible';
+
+                    hr1.style.width='20rem';
+                    hr2.style.width='20rem';
+                    hr3.style.width='20rem';
+                    hr4.style.width='20rem';
+                    hr5.style.width='20rem';
+
+                    link1.style.opacity='1';
+                    link2.style.opacity='1';
+                    link3.style.opacity='1';
+                    link4.style.opacity='1';
+                    link5.style.opacity='1';
+
+                    hr1.style.opacity='1';
+                    hr2.style.opacity='1';
+                    hr3.style.opacity='1';
+                    hr4.style.opacity='1';
+                    hr5.style.opacity='1';
+
+                    if(box.checked == true && mediatab.matches){
+                        hr1.style.transform='translateX(0rem)';
+                        hr2.style.transform='translateX(0rem)';
+                        hr3.style.transform='translateX(0rem)';
+                        hr4.style.transform='translateX(0rem)';
+                        hr5.style.transform='translateX(0rem)';
+
+
+                        link1.style.transform='translateX(0rem)';
+                        link2.style.transform='translateX(0rem)';
+                        link3.style.transform='translateX(0rem)';
+                        link4.style.transform='translateX(0rem)';
+                        link5.style.transform='translateX(0rem)'; 
+                    }
+
+                    if(box.checked == true && mediaphone.matches){
+                        hr1.style.transform='translateX(-20rem)';
+                        hr2.style.transform='translateX(-20rem)';
+                        hr3.style.transform='translateX(-20rem)';
+                        hr4.style.transform='translateX(-20rem)';
+                        hr5.style.transform='translateX(-20rem)';
+
+
+                        link1.style.transform='translateX(-20rem)';
+                        link2.style.transform='translateX(-20rem)';
+                        link3.style.transform='translateX(-20rem)';
+                        link4.style.transform='translateX(-20rem)';
+                        link5.style.transform='translateX(-20rem)'; 
+                    }
+
+
+
+                }
+                else{
+                    if(mediatab.matches){
+                    document.getElementById('side-nav').style.width='0';
+                    link1.style.visibility='hidden';
+                    link2.style.visibility='hidden';
+                    link3.style.visibility='hidden';
+                    link4.style.visibility='hidden';
+                    link5.style.visibility='hidden';
+
+                    hr1.style.visibility='hidden';
+                    hr2.style.visibility='hidden';
+                    hr3.style.visibility='hidden';
+                    hr4.style.visibility='hidden';
+                    hr5.style.visibility='hidden';
+
+
+                    link1.style.opacity='0';
+                    link2.style.opacity='0';
+                    link3.style.opacity='0';
+                    link4.style.opacity='0';
+                    link5.style.opacity='0';
+
+                    hr1.style.opacity='0';
+                    hr2.style.opacity='0';
+                    hr3.style.opacity='0';
+                    hr4.style.opacity='0';
+                    hr5.style.opacity='0';
+
+                    hr1.style.width='0';
+                    hr2.style.width='0';
+                    hr3.style.width='0';
+                    hr4.style.width='0';
+                    hr5.style.width='0';
+
+                    hr1.style.transform='translateX(15rem)';
+                    hr2.style.transform='translateX(15rem)';
+                    hr3.style.transform='translateX(15rem)';
+                    hr4.style.transform='translateX(15rem)';
+                    hr5.style.transform='translateX(15rem)';
+
+
+                    link1.style.transform='translateX(15rem)';
+                    link2.style.transform='translateX(15rem)';
+                    link3.style.transform='translateX(15rem)';
+                    link4.style.transform='translateX(15rem)';
+                    link5.style.transform='translateX(15rem)';
+                }
+                }
+                }
+
+                function turn1(){
+                    document.getElementById("front1").style.transform = 'rotateY(180deg)';
+                    document.getElementById("back1").style.transform = 'rotateY(360deg)';
+                }
+                function turn2(){
+                    document.getElementById("front2").style.transform = 'rotateY(180deg)';
+                    document.getElementById("back2").style.transform = 'rotateY(360deg)';
+                }
+                function turn3(){
+                    document.getElementById("front3").style.transform = 'rotateY(180deg)';
+                    document.getElementById("back3").style.transform = 'rotateY(360deg)';
+                }
+                function turn4(){
+                    document.getElementById("front4").style.transform = 'rotateY(180deg)';
+                    document.getElementById("back4").style.transform = 'rotateY(360deg)';
+                }
+                function turn5(){
+                    document.getElementById("front5").style.transform = 'rotateY(180deg)';
+                    document.getElementById("back5").style.transform = 'rotateY(360deg)';
+                }
+                function turn6(){
+                    document.getElementById("front6").style.transform = 'rotateY(180deg)';
+                    document.getElementById("back6").style.transform = 'rotateY(360deg)';
+                }
+
+
+                function unturn1(){
+                    document.getElementById("front1").style.transform = 'rotateY(0deg)';
+                    document.getElementById("back1").style.transform = 'rotateY(180deg)';
+                }
+                function unturn2(){
+                    document.getElementById("front2").style.transform = 'rotateY(0deg)';
+                    document.getElementById("back2").style.transform = 'rotateY(180deg)';
+                }
+                function unturn3(){
+                    document.getElementById("front3").style.transform = 'rotateY(0deg)';
+                    document.getElementById("back3").style.transform = 'rotateY(180deg)';
+                }
+                function unturn4(){
+                    document.getElementById("front4").style.transform = 'rotateY(0deg)';
+                    document.getElementById("back4").style.transform = 'rotateY(180deg)';
+                }
+                function unturn5(){
+                    document.getElementById("front5").style.transform = 'rotateY(0deg)';
+                    document.getElementById("back5").style.transform = 'rotateY(180deg)';
+                }
+                function unturn6(){
+                    document.getElementById("front6").style.transform = 'rotateY(0deg)';
+                    document.getElementById("back6").style.transform = 'rotateY(180deg)';
+                }
+        
+            </script>
+    </body>
+
+</html>

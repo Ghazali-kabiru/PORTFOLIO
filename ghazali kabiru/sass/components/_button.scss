@@ -1,0 +1,40 @@
+.btn{
+    border-radius: 10rem;
+    transition: .15s all;
+
+    &:hover{
+        transform: translate(-50%,-2px);
+        box-shadow: 0 .2rem 1rem black;
+    }
+    &:active{
+        transform: translate(-50%,4px);
+        box-shadow: 0 .2rem 0.2rem black;
+    }
+    &-white{
+        background-color: #fff;
+        padding: 1rem 4rem;
+        text-decoration: none;
+        color: purple;
+
+        @include respond(tablet-portrait){
+            padding: 2rem 6rem;
+        }
+    }
+
+    &-trans{
+        background-color: transparent;
+        border-radius: 10rem;
+        border: 1px solid;
+
+        &:hover{
+            bottom: 3.2rem;
+            box-shadow: 0 .2rem 1rem black;
+            left: 50%;
+        }
+        &:active{
+            bottom: 2.8rem;
+            box-shadow: 0 .2rem 0.2rem black;
+            left: 50%;
+        }
+    }
+}

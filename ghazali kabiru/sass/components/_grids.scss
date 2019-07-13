@@ -1,0 +1,206 @@
+.col{
+    //@include clearfix;
+
+    &-1-of-2{
+        float: left;
+    }
+    &-2-of-2{
+        float: right;
+
+        //@include respond(tablet-portrait){float: left;}
+    }
+
+
+    
+   
+}
+
+.about{
+
+    &_row{
+
+        &-fix{ 
+            display: block;
+
+            &-1{
+                position: absolute;
+                float: left;
+                transform: translateX(-50%);
+                left: 20%;
+                top: 0;
+            }
+            &-2{
+                position: absolute;
+                float: left;
+                transform: translateX(-50%);
+                left: 50%;
+                top: 0;
+            }
+            &-3{
+                position: absolute;
+                float: left;
+                transform: translateX(-50%);
+                left: 80%;
+                top: 0;
+            }
+            &-4{
+                position: absolute;
+                float: left;
+                transform: translateX(-50%);
+                left: 20%;
+                top:45%;
+            }
+            &-5{
+                position: absolute;
+                float: left;
+                transform: translateX(-50%);
+                left: 50%;
+                top:45%;
+            }
+            &-6{
+                position: absolute;
+                float: left;
+                transform: translateX(-50%);
+                left: 80%;
+                top:45%;
+            }
+
+            @include respond(tablet-portrait){
+                &-1{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 25%;
+                    top: 0;
+                }
+                &-2{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 75%;
+                    top: 0;
+                }
+                &-3{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 25%;
+                    top: 55%;
+                }
+                &-4{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 75%;
+                    top:55%;
+                }
+                &-5{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 25%;
+                    top:110%;
+                }
+                &-6{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 75%;
+                    top:110%;
+                }
+            }
+
+            @include respond(phone){
+                &-1{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top: 0;
+                }
+                &-2{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top: 90%;
+                }
+                &-3{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top: 180%;
+                }
+                &-4{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top:270%;
+                }
+                &-5{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top:360%;
+                }
+                &-6{
+                    position: absolute;
+                    float: left;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top:450%;
+                }
+            }
+        
+        }
+    }
+}
+
+
+.skills{
+
+    &_body{
+      
+        &_subbody{
+              
+                &_row{
+                    
+                    &_col1{
+                        float: left;
+                        width: 15%;
+                        height: 100%;
+                       // background-color: red;
+                       @include respond(tablet-portrait){
+                           width: 20%
+                       }
+                        
+                    }
+                    &_col2{
+                        float: left;
+                        width: 75%;
+                        height: 100%;
+                       // background-color: green;
+                       @include respond(tablet-portrait){
+                           width: 70%
+                       }
+                        
+                    }
+                    &_col3{
+                        float: left;
+                        width: 10%;
+                        height: 100%;
+                      // background-color: yellow;
+                      @include respond(tablet-portrait){
+                          width: 10%
+                      }
+                        
+                    }
+                }
+            }
+        }
+
+    }
+
